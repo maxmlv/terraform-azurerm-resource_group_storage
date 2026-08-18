@@ -6,7 +6,7 @@ A small Terraform module that provisions an Azure Resource Group and a Storage A
 
 ```hcl
 module "storage" {
-  source = "github.com/<your-org>/terraform-azurerm-storage-account"
+  source = "github.com/maxmlv/terraform-azurerm-storage-account"
 
   resource_group_name  = "my-resource-group"
   storage_account_name = "mystorageaccount123"
@@ -40,8 +40,7 @@ module "storage" {
 
 | Name | Description |
 |------|-------------|
-| resource_group_name | Name of the created resource group |
-| storage_account_name | Name of the created storage account |
+| resource_group_id | ID of the created resource group |
 | storage_account_id | ID of the created storage account |
 
 ## Notes
