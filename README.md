@@ -5,14 +5,11 @@ A small Terraform module that provisions an Azure Resource Group and a Storage A
 ## Usage
 
 ```hcl
-module "storage" {
-  source = "app.terraform.io/maxmlv/terraform-azurerm-storage-account"
+module "resource_group_storage" {
+  source  = "maxmlv/resource_group_storage/azurerm"
   version = "1.0.0"
 
-  # insert required variables here
-  resource_group_name  = "my-resource-group"
-  storage_account_name = "mystorageaccount123"
-  location              = "westeurope"
+  # insert the 3 required variables here
 }
 ```
 
@@ -42,8 +39,8 @@ module "storage" {
 
 | Name | Description |
 |------|-------------|
-| resource_group_id | ID of the created resource group |
-| storage_account_id | ID of the created storage account |
+| resource_group_id  |   ID of the created resource group |
+| storage_account_id  |   ID of the created storage account |
 
 ## Notes
 
